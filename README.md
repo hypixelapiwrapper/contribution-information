@@ -5,7 +5,7 @@
 This repository provides information for contribution to our collection of Hypixel API wrappers. This information should help you understand our approach to writing our API wrappers, as well as deepen your understanding of our code base.
 
 ## Quick rundown
-In order to avoid confusion about which information applies to which language, all files are given a header stating the language they apply to. Some files may apply to all languages.
+In order to avoid this multi-language project causing confusion between languages, all files are given a header stating the language they apply to. Some files may apply to all languages.
 
 
 ## Information index
