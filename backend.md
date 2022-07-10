@@ -1,5 +1,11 @@
 ## Applies to [Java, Python, JavaScript]
 
+# Wrapper structure
+All wrappers should follow a similar structure to preserve ease for the end user (the developer using our wrapper).
+
+**Backend** - How the wrapper works behind the scenes.
+**Frontend** - How the end user interacts with our wrapper.
+
 ## Backend
 The main features of our wrapper are:
  - Dynamic loading of data, based on end users needs (explained below).
