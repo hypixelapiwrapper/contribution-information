@@ -11,7 +11,7 @@ In order to avoid this multi-language project causing confusion between language
 ## Information index
 This list will help you find your way around the repository:
 
- - General code structure: [structure.md](https://github.com/hypixelapiwrapper/contribution-information/blob/master/structure.md)
+ - General code structure: [frontend.md]([https://github.com/hypixelapiwrapper/contribution-information/blob/master/structure.md](https://github.com/hypixelapiwrapper/contribution-information/blob/master/frontend.md)) [backend.md](https://github.com/hypixelapiwrapper/contribution-information/blob/master/backend.md)
  - Java specific information: [java/](https://github.com/hypixelapiwrapper/contribution-information/tree/master/java)
  - Javascript specific information: [javascript/](https://github.com/hypixelapiwrapper/contribution-information/tree/master/javascript)
  - Python specific information: [python/](https://github.com/hypixelapiwrapper/contribution-information/tree/master/python)
