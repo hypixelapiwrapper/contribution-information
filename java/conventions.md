@@ -9,7 +9,7 @@ Packages - Lower case, separated by dots - Our package name is already configure
 During contribution, you may create hard-to-understand method names.
 In this case, please comment it!
 
-Use `@param ______` to explain any non-explainable parameters passed to the method.
+Use `@param ______` to explain any non-explainable parameters passed to the method.<br/>
 Use `@return ______` to explain any non-explainable return values.
 
 ```java
