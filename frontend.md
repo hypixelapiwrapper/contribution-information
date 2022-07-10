@@ -14,5 +14,5 @@ A few general rules for frontend:
  - If a method inside a front-end class isn't easy to understand, please annotate it. You can find how to annotate in your appropriate language conventions.
 
 ### Need help?
-If you have any suggestions, or are unsure of any information, please join our Discord server and ask: [Invite Link](https://discord.com/invite/NkRQHemWtJ)
+If you have any suggestions, or are unsure of any information, please join our Discord server and ask: [Invite Link](https://discord.com/invite/NkRQHemWtJ)<br>
 Thanks so much for contributing to this project ❤️
