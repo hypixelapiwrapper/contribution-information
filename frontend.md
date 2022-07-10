@@ -8,9 +8,10 @@ All wrappers should follow a similar structure to maintain simplicity and readab
 
 ## Frontend
 A few general rules for frontend:
+ - Languages **should** follow their most used naming conventions separately.</br></br>
  - All classes/structs/objects used in the front end **should** be prefixed with "Hypixel" e.g. `HypixelPlayer` `HypixelGuild` `HypixelSkyblockProfile` (there may be exceptions, these will be documented per language)
- - Between languages, all class/struct/object names **should** be the same. If you are unsure about what names to use, look at the source code of other wrappers.</br></br>
- - Between languages, all methods of corresponding classes/structs/objects **should** have the same name. These methods **must** return the same data.
+ - Between languages, all classes/structs/objects **should** have similar names. If you are unsure about what names to use, look at the source code of other wrappers.</br></br>
+ - Between languages, all methods of corresponding classes/structs/objects **should** have similar names. These methods **must** return the same data.
  - Methods **must** always be provided with documentation describing what the method returns.
 
 ### Need help?
