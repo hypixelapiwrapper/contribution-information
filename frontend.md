@@ -1,17 +1,18 @@
 ## Applies to [All languages]
 
 # Wrapper structure
-All wrappers should follow a similar structure to preserve ease for the end user (the developer using our wrapper).
+All wrappers should follow a similar structure to maintain simplicity and readability for all devevelopers working on this project *and* all developers using our wrappers.
 
 **Backend** - How the wrapper works behind the scenes. <br>
 **Frontend** - How the end user interacts with our wrapper.
 
 ## Frontend
 A few general rules for frontend:
- - All classes used in front end **must** be prefixed with "Hypixel" e.g. `HypixelPlayer` `HypixelGuild` `HypixelSkyblockProfile` (there may be few exceptions)
- - Between languages, all class names **must** be the same. If you are unsure of any names for your language, refer to other wrappers source code.</br></br>
- - All methods inside a front-end class **must** contain the same methods, and names.
- - If a method inside a front-end class isn't easy to understand, please annotate it. You can find how to annotate in your appropriate language conventions.
+ - Languages **should** follow their most used naming conventions separately.</br></br>
+ - All classes/structs/objects used in the front end **should** be prefixed with "Hypixel" e.g. `HypixelPlayer` `HypixelGuild` `HypixelSkyblockProfile` (there may be exceptions, these will be documented per language)
+ - Between languages, all classes/structs/objects **should** have similar names. If you are unsure about what names to use, look at the source code of other wrappers.</br></br>
+ - Between languages, all methods of corresponding classes/structs/objects **should** have similar names. These methods **must** return the same data.
+ - Methods **must** always be provided with documentation describing what the method returns.
 
 ### Need help?
 If you have any suggestions, or are unsure of any information, please join our Discord server and ask: [Invite Link](https://discord.com/invite/NkRQHemWtJ)<br>
