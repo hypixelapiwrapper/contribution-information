@@ -12,13 +12,13 @@ In this case, please comment it!
 Use `@param ______` to explain any non-explainable parameters passed to the method.
 Use `@return ______` to explain any non-explainable return values.
 
-`
+```java
 /*
-    @return An integer representing the amount of exp you are over your previous, full level.
+ *  @return An integer representing the amount of exp you are over your previous, full level.
 */
 public int getExpToHypixelLevel(long current) {
     return this.whatever;
 }
-`
+```
 
 Comments should always appear above the method.
