@@ -41,3 +41,7 @@ Because the `player` object has already requested data from the `/player` endpoi
 Now, why do we use this system? Two reasons:
 1. It allows classes to be feature rich, allowing methods for a lot more information than a default wrapper (as we can fit multiple endpoints with related data into one class).
 2. It cuts down on requests tremendously. If you created a player object, just to get their friends, a normal wrapper would've uselessly sent a request to get player data, when it was unneeded, before sending a request to get friends.
+
+### Need help?
+If you have any suggestions, or are unsure of any information, please join our Discord server and ask: [Invite Link](https://discord.com/invite/NkRQHemWtJ)
+Thanks so much for contributing to this project ❤️
