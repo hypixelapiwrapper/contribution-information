@@ -43,5 +43,5 @@ Now, why do we use this system? Two reasons:
 2. It cuts down on requests tremendously. If you created a player object, just to get their friends, a normal wrapper would've uselessly sent a request to get player data, when it was unneeded, before sending a request to get friends.
 
 ### Need help?
-If you have any suggestions, or are unsure of any information, please join our Discord server and ask: [Invite Link](https://discord.com/invite/NkRQHemWtJ)
+If you have any suggestions, or are unsure of any information, please join our Discord server and ask: [Invite Link](https://discord.com/invite/NkRQHemWtJ)<br>
 Thanks so much for contributing to this project ❤️
