@@ -1,6 +1,6 @@
 ## Applies to [Java]
 
-## Overview of Java naming convetions
+## Overview of Java naming conventions
 Variables and methods - Lower Camel Case - `players()` or `getPlayer()` for example
 
 Classes, interfaces, annotations, enums, records - Upper Camel Case - `HypixelPlayer` or `PlayerUtility` for example
