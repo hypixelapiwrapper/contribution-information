@@ -12,27 +12,24 @@ A few general rules for frontend:
 
 Detailed information for frontend:
 --
-**Note**: While reading the information below, every *method* that takes multiple arguments should be implemented as either multiple methods with different parameter types or multiple methods denoting the difference in argument type in the name.
-
- - A main data structure called `HypixelAPI` **must** exist in the wrapper. `HypixelAPI` **must** store the following data:
-    - An **`API key`**: This is a key retrieved from Hypixel and provided by the developer, this should be in the form of a **UUID**.
-    - A (reference to a) **`HypixelCache`**: This is a data structure that implements the `HypixelCache` interface, see below.
-    - A (reference to a) **`HypixelCacheStrategy`**: This is a data structure that implements the `HypixelCacheStrategy` interface, see below.
-
+- A main data structure called `HypixelAPI` **must** exist in the wrapper. `HypixelAPI` **must** store the following data:
 
 | name | type | note |
 | --- | --- | --- |
 | API Key | **`UUID`** | This is a key retrieved from Hypixel and provided by the developer. |
 | Cache | **`HypixelCache`** | This may be a reference. `HypixelCache` is an interface, see below. |
 | Cache Strategy | **`HypixelCacheStrategy`** | This may be a reference. `HypixelCacheStrategy` is an interface, see below. |
-</br></br>
- - **`HypixelAPI`** **must** implement the following methods (for the different data structures, see below):
-    - A method that returns a **`HypixelPlayer`** data structure. This method takes either a UUID or the name of the requested player as argument.
-    - A method that returns a **`HypixelGuild`** data structure. This method takes either the UUID of a player in the requested guild, the id of the requested guild or the name of the requested guild as argument.
-    - A method that returns a **`HypixelLeaderboards`** data structure. This method takes no arguments.
-    - A method that returns a **`HypixelPunishmentStats`** data structure. This method takes no arguments.
-    - **Note**: If a language's design and conventions permit it, these methods may be structurally grouped together, branching off of `HypixelAPI`.
-</br></br>
+
+- **`HypixelAPI` must** implement one or more methods for every row in the following table:
+
+| arguments | return type | note |
+| --- | --- | --- |
+| or `UUID` of the player</br>or `Name` of the player | **`HypixelPlayer`** | `Name` is a string. |
+| or `UUID` of player in guild</br>or `ID` of requested guild</br>or `Name` of the requested guild | **`HypixelGuild`** | `Name` is a string. |
+| | **`HypixelLeaderboards`** |
+| | **`HypixelPunishmentStats`** |
+**Note**: If a language's design and conventions permit it, these methods may be structurally grouped together, branching off of `HypixelAPI`.
+
  - **`HypixelPlayer`** **must** implement the following methods:
     - A method that returns the friends of the player in the form of a list of **`HypixelPlayer`** data structures.
     - A method that returns the online status of the player in the form of a **`HypixelPlayerStatus`** data structure.
