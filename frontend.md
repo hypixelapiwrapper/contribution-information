@@ -18,6 +18,11 @@ Detailed information for frontend:
     - An **`API key`**: This is a key retrieved from Hypixel and provided by the developer, this should be in the form of a **UUID**.
     - A (reference to a) **`HypixelCache`**: This is a data structure that implements the `HypixelCache` interface, see below.
     - A (reference to a) **`HypixelCacheStrategy`**: This is a data structure that implements the `HypixelCacheStrategy` interface, see below.
+| name | type | note |
+|---|---|---|
+|API Key | **`UUID`** | This is a key retrieved from Hypixel and provided by the developer.|
+|Cache | **`HypixelCache`** | This may be a reference. `HypixelCache` is an interface, see below.|
+|Cache Strategy | **`HypixelCacheStrategy`** | This may be a reference. `HypixelCacheStrategy` is an interface, see below. |
 </br></br>
  - **`HypixelAPI`** **must** implement the following methods (for the different data structures, see below):
     - A method that returns a **`HypixelPlayer`** data structure. This method takes either a UUID or the name of the requested player as argument.
