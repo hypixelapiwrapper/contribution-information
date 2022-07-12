@@ -13,19 +13,23 @@ A few general rules for frontend:
 Detailed information for frontend:
 --
  - A main data structure called `HypixelAPI` **must** exist in the wrapper. `HypixelAPI` **must** store the following data:
-    - A **`API key`**: This is a key retrieved from Hypixel and provided by the developer, this should be in the form of a **UUID**.
+    - An **`API key`**: This is a key retrieved from Hypixel and provided by the developer, this should be in the form of a **UUID**.
     - A (reference to a) **`HypixelCache`**: This is a data structure that implements the `HypixelCache` interface, see below.
-    - A (reference to a) **`HypixelCacheStrategy`**: This is a data structure that implements the `HypixelCacheStrategy` interface, see below.</br>
+    - A (reference to a) **`HypixelCacheStrategy`**: This is a data structure that implements the `HypixelCacheStrategy` interface, see below.
+</br></br>
  - **`HypixelAPI`** **must** implement the following methods (for the different data structures, see below):
     - A method that returns a **`HypixelPlayer`** data structure. This method takes either a UUID or the name of the requested player as argument.
     - A method that returns a **`HypixelGuild`** data structure. This method takes either the UUID of a player in the requested guild, the id of the requested guild or the name of the requested guild as argument.
     - A method that returns a **`HypixelLeaderboards`** data structure. This method takes no arguments.
-    - A method that returns a **`HypixelPunishmentStats`** data structure. This method takes no arguments.</br>
+    - A method that returns a **`HypixelPunishmentStats`** data structure. This method takes no arguments.
+    - **Note**: If a language's design and conventions permit it, these methods may be structurally grouped together, branching off of `HypixelAPI`.
+</br></br>
  - **`HypixelPlayer`** **must** implement the following methods:
     - A method that returns the friends of the player in the form of a list of **`HypixelPlayer`** data structures.
     - A method that returns the online status of the player in the form of a **`HypixelPlayerStatus`** data structure.
     - A method that returns the recent games of the player in the form of a list of **`HypixelGameSession`** data structures.
-    - A method that returns either a **`HypixelGuild`** if the player is in a guild or nothing if the player is not in a guild.</br>
+    - A method that returns either a **`HypixelGuild`** if the player is in a guild or nothing if the player is not in a guild.
+</br></br>
  - **`HypixelGuild` must** implement the following methods:
     - ...
 
