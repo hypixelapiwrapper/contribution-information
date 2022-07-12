@@ -12,6 +12,8 @@ A few general rules for frontend:
 
 Detailed information for frontend:
 --
+**Note**: While reading the information below, every *method* that takes multiple arguments should be implemented as either multiple methods with different parameter types or multiple methods denoting the difference in argument type in the name.
+
  - A main data structure called `HypixelAPI` **must** exist in the wrapper. `HypixelAPI` **must** store the following data:
     - An **`API key`**: This is a key retrieved from Hypixel and provided by the developer, this should be in the form of a **UUID**.
     - A (reference to a) **`HypixelCache`**: This is a data structure that implements the `HypixelCache` interface, see below.
