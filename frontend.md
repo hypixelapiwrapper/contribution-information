@@ -28,6 +28,7 @@ Detailed information for frontend:
 | or `UUID` of player in guild</br>or `ID` of requested guild</br>or `Name` of the requested guild | **`HypixelGuild`** | `Name` is a string. |
 | | **`HypixelLeaderboards`** |
 | | **`HypixelPunishmentStats`** |
+
 **Note**: If a language's design and conventions permit it, these methods may be structurally grouped together, branching off of `HypixelAPI`.
 
  - **`HypixelPlayer`** **must** implement the following methods:
