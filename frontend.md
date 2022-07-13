@@ -12,6 +12,8 @@ A few general rules for frontend:
 
 Detailed information for frontend:
 --
+**Note**: When reading the information below, multiple methods that return the same data **must** only ever be allowed because of multiple independent arguments.
+
 - A main data structure called `HypixelAPI` **must** exist in the wrapper. `HypixelAPI` **must** store the following data:
 
 | name | type | note |
@@ -31,12 +33,15 @@ Detailed information for frontend:
 
 **Note**: If a language's design and conventions permit it, these methods may be structurally grouped together, branching off of `HypixelAPI`.
 
- - **`HypixelPlayer`** **must** implement the following methods:
-    - A method that returns the friends of the player in the form of a list of **`HypixelPlayer`** data structures.
-    - A method that returns the online status of the player in the form of a **`HypixelPlayerStatus`** data structure.
-    - A method that returns the recent games of the player in the form of a list of **`HypixelGameSession`** data structures.
-    - A method that returns either a **`HypixelGuild`** if the player is in a guild or nothing if the player is not in a guild.
-</br></br>
+- **`HypixelPlayer`** **must** implement the following methods:
+
+| arguments | return type | note |
+| --- | --- | --- |
+| | **`HypixelPlayerStatus`** | This returns the online status of the player. |
+| | collection of **`HypixelPlayer`** | This returns the friends of the player. |
+| | collection of **`HypixelGameSession`** | This returns the recent games of the player. |
+| | optional **`HypixelGuild`** | This returns guild of the player. |
+
  - **`HypixelGuild` must** implement the following methods:
     - ...
 
