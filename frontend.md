@@ -1,4 +1,4 @@
-## Applies to [All languages]
+### Applies to [All languages]
 
 # Frontend
 A few general rules for frontend:
@@ -65,10 +65,10 @@ Detailed information for frontend:
 | arguments | return type | note |
 | --- | --- | --- |
 | | **`Timestamp`** | This returns the date and time at which the game started. |
+| | **`Timestmap`** | This returns the date and time at which the game ended. |
 | | **`GameType`** | This returns the specific game the player was in. |
 | | **`String`** | This returns the mode of the game. |
 | | **`String`** | This returns the map of the game. |
-| | **`Timestmap`** | This returns the date and time at which the game ended. |
 
  - **`HypixelGuild` must** implement the following methods:
     - ...
