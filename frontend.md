@@ -13,6 +13,7 @@ A few general rules for frontend:
 Detailed information for frontend:
 --
 **Note**: When reading the information below, multiple methods that return the same data **must** only ever be allowed because of multiple independent arguments.
+**Note**: This information explicitly does not describe how the different data structures should behave internally or what data they need to store. This is reserved for the backend and should not concern the frontend enough to list here.
 
 - A main data structure called `HypixelAPI` **must** exist in the wrapper. `HypixelAPI` **must** store the following data:
 
@@ -38,9 +39,36 @@ Detailed information for frontend:
 | arguments | return type | note |
 | --- | --- | --- |
 | | **`HypixelPlayerStatus`** | This returns the online status of the player. |
-| | collection of **`HypixelPlayer`** | This returns the friends of the player. |
+| | collection of **`HypixelFriendShip`** | This returns the friends of the player. |
 | | collection of **`HypixelGameSession`** | This returns the recent games of the player. |
 | | optional **`HypixelGuild`** | This returns guild of the player. |
+
+- **`HypixelPlayerStatus`** **must** implement the following methods:
+
+| arguments | return type | note |
+| --- | --- | --- |
+| | **`boolean`** | This returns whether the player is currently online. |
+| | **`GameType`** | This returns the game the player is in. |
+| | **`String`** | This returns the mode of the game. |
+| | **`String`** | This returns the map of the game. |
+
+- **`HypixelFriendShip`** **must** implement the following methods:
+
+| arguments | return type | note |
+| --- | --- | --- |
+| | **`HypixelPlayer`** | This returns the player who sent the friend request. |
+| | **`HypixelPlayer`** | This returns the player who accepted the friend request. |
+| | **`Timestamp`** | This returns the date and time at which the friendship started. |
+
+- **`HypixelGameSession`** **must** implement the following methods:
+
+| arguments | return type | note |
+| --- | --- | --- |
+| | **`Timestamp`** | This returns the date and time at which the game started. |
+| | **`GameType`** | This returns the specific game the player was in. |
+| | **`String`** | This returns the mode of the game. |
+| | **`String`** | This returns the map of the game. |
+| | **`Timestmap`** | This returns the date and time at which the game ended. |
 
  - **`HypixelGuild` must** implement the following methods:
     - ...
