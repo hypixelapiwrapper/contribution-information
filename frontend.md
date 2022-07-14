@@ -13,7 +13,8 @@ A few general rules for frontend:
 Detailed information for frontend:
 --
 **Note**: When reading the information below, multiple methods that return the same data **must** only ever be allowed because of multiple independent arguments.
-**Note**: This information explicitly does not describe how the different data structures should behave internally or what data they need to store. This is reserved for the backend and should not concern the frontend enough to list here.
+
+**Note**: This information explicitly does not describe how the different data structures should behave internally or what data they need to store. This is reserved for the backend and should not concern the frontend enough to be listed here.
 
 - A main data structure called `HypixelAPI` **must** exist in the wrapper. `HypixelAPI` **must** store the following data:
 
