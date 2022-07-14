@@ -29,18 +29,18 @@ Detailed information for frontend:
 | arguments | return type | note |
 | --- | --- | --- |
 | or `UUID` of the player</br>or `Name` of the player | **`HypixelPlayer`** | `Name` is a string. |
-| or `UUID` of player in guild</br>or `ID` of requested guild</br>or `Name` of the requested guild | **`HypixelGuild`** | `Name` is a string. |
+| or `ID` of requested guild</br>or `Name` of the requested guild | **`HypixelGuild`** | `Name` is a string. |
 | | **`HypixelLeaderboards`** |
 | | **`HypixelPunishmentStats`** |
 
-**Note**: If a language's design and conventions permit it, these methods may be structurally grouped together, branching off of `HypixelAPI`.
+**Note**: If a language's design and conventions permit it, these methods may be structurally grouped together, branching off of `HypixelAPI` (such as `HypixelAPI.players`).
 
 - **`HypixelPlayer`** **must** implement the following methods:
 
 | arguments | return type | note |
 | --- | --- | --- |
 | | **`HypixelPlayerStatus`** | This returns the online status of the player. |
-| | collection of **`HypixelFriendShip`** | This returns the friends of the player. |
+| | collection of **`HypixelFriendship`** | This returns the friends of the player. |
 | | collection of **`HypixelGameSession`** | This returns the recent games of the player. |
 | | optional **`HypixelGuild`** | This returns guild of the player. |
 
@@ -53,7 +53,7 @@ Detailed information for frontend:
 | | **`String`** | This returns the mode of the game. |
 | | **`String`** | This returns the map of the game. |
 
-- **`HypixelFriendShip`** **must** implement the following methods:
+- **`HypixelFriendship`** **must** implement the following methods:
 
 | arguments | return type | note |
 | --- | --- | --- |

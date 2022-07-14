@@ -32,7 +32,7 @@ Automatic rate-limiting
 To efficiently maximize the ease of use for the end user while also avoid getting rate-limited by `Hypixel API`,
 all wrappers should implement the following rate-limiting scheme.
 
-![rate-limiting scheme](ratelimiting.png) 
+![rate-limiting scheme](images/ratelimiting.png) 
 
 `HypixelAPI` has only 1 `RequestHandler` and 1 `Throttler`. The interactions between `RequestHandler` and `Throttler` **must** be threadsafe.
 The response to a error `429: too many requests` (this is rare) should be to reschedule the request as denoted in the diagram by the loop.
